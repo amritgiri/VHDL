@@ -32,7 +32,15 @@ begin
 					 reset <= '0';
 					 a <= 10;
 					 b <= 15;
+					
+					 wait for 2100 ns;
+					 reset <= '1';
+					 a <= 3456;
+					 b <= 234;
 
+					 wait for 600 ns;
+					 reset <='0';
+					 
 					 wait;
 				 end process;
 			 end behaviour;
