@@ -22,6 +22,10 @@ $ cd gcd
 ```bash
 $ make
 ```
+- You can view inside Makefile to understand what command is executed that created result.vcd
+```bash
+$ cat Makefile
+```
 
 - This will create a file result.vcd
 - To observe output run
@@ -32,3 +36,8 @@ This should open the gtkwave
 - click on gcd shown on SST section
 - double click on signals
 - on the bar, there is tick with search icon click there and observe your output
+
+- If you want to clear your result.vcd run
+```bash
+$ make clean
+```
