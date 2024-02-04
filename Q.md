@@ -1,6 +1,6 @@
-1)`080` VHDL code to implement 1 to 8 De-Multiplexer
+1) `080` VHDL code to implement 1 to 8 De-Multiplexer
 
-2)`079 Jestha` VHDL code for a D flip-flop
+2) `079 Jestha` VHDL code for a D flip-flop
 
 3) `079 Ashwin` VHDL code 3bit up counter using T flip-flop using structural modeling
 
