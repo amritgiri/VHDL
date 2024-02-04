@@ -17,7 +17,7 @@ begin
 	begin
 		case select_signals is
 			when "000" =>
-				y <= (A, '0', '0', '0', '0', '0', '0', '0'); --output line 0 when 000
+				y <= (A, '0', '0', '0', '0', '0', '0', '0'); --output line 0 when s2,s1,s0 => `000`
 			when "001" =>
 				y <= ('0', A, '0', '0', '0', '0', '0', '0');
 			when "010" =>
