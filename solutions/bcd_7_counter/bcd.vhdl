@@ -18,4 +18,4 @@ begin
 	f <= b0 or (not b2 and not b3) or (b1 and not b2) or (b1 and not b3);
 	g <= b0 or (b1 and not b2) or ( not b1 and b2) or (b2 and not b3);
 
-end behavioral;
+end behaviour;
