@@ -1,4 +1,4 @@
-## files
+# Files
 
 - `t_flipflop.vhdl` : VHDL code for t-flipflop upcounter
 - `t_flipflop_tb.vhdl` : VHDL code for testbench

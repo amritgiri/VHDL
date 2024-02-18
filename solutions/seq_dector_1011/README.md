@@ -1,4 +1,4 @@
-## files
+# Files
 
 - `seq_det.vhdl` : VHDL code for Sequence Detector
 - `seq_det_tb.vhdl` : VHDL code for testbench

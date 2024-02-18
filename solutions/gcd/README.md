@@ -1,4 +1,4 @@
-## files
+# Files
 
 - `gcd.vhdl` : VHDL code for gcd
 - `gcd_tb.vhdl` : VHDL code for testbench

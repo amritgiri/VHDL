@@ -1,4 +1,4 @@
-## files
+# Files
 
 - `jk.vhdl` : VHDL code for jk flip-flop
 - `jk_tb.vhdl` : VHDL code for testbench

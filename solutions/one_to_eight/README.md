@@ -1,4 +1,4 @@
-## files
+# Files
 
 - `one_eight.vhdl` : VHDL code for one to eight de-multiplexer
 - `one_eight_tb.vhdl` : VHDL code for testbench

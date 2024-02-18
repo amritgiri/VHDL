@@ -1,4 +1,4 @@
-## files
+# Files
 
 - `lcm.vhdl` : VHDL code for LCM
 - `lcm_tb.vhdl` : VHDL code for testbench
