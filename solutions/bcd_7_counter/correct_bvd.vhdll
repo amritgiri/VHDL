@@ -1,0 +1,64 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity bcd_7_counter is
+    port(
+        clk: in std_logic;
+        reset: in std_logic;
+        bcd_out: out std_logic_vector(3 downto 0)
+    );
+end entity;
+
+architecture rtl of bcd_7_counter is
+    signal count: unsigned(3 downto 0) := (others => '0');
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            count <= (others => '0');
+        elsif rising_edge(clk) then
+            count <= count + 1;
+        end if;
+    end process;
+
+    bcd_out <= std_logic_vector(count);
+end architecture;
+
+entity bcd_seg is
+    port(
+        bcd_in: in std_logic_vector(3 downto 0);
+        a, b, c, d, e, f, g: out std_logic
+    );
+end entity;
+
+architecture behaviour of bcd_seg is
+begin
+    with bcd_in select
+        a <= '1' when "0000" | "0001" | "0010" | "0011" | "0110" | "0111" | "1000" | "1001",
+             '0' when others;
+             
+    with bcd_in select
+        b <= '1' when "0000" | "0001" | "0011" | "0100" | "0101" | "0111" | "1000" | "1001",
+             '0' when others;
+             
+    with bcd_in select
+        c <= '1' when "0000" | "0010" | "0011" | "0100" | "0110" | "1000" | "1001",
+             '0' when others;
+             
+    with bcd_in select
+        d <= '1' when "0000" | "0001" | "0010" | "0101" | "0110" | "0111" | "1000" | "1001",
+             '0' when others;
+             
+    with bcd_in select
+        e <= '1' when "0000" | "0001" | "0010" | "0100" | "0101" | "0110" | "1000" | "1001",
+             '0' when others;
+             
+    with bcd_in select
+        f <= '1' when "0000" | "0001" | "0100" | "0101" | "0111" | "1000" | "1001",
+             '0' when others;
+             
+    with bcd_in select
+        g <= '1' when "0000" | "0001" | "0010" | "0011" | "0101" | "0110" | "1000" | "1001",
+             '0' when others;
+end architecture;
