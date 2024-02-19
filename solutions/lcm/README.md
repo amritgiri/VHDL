@@ -3,7 +3,7 @@
 - `lcm.vhdl` : VHDL code for LCM
 - `lcm_tb.vhdl` : VHDL code for testbench
 
-# Fsm for lcm
+# Fsm for LCM
 ![fsm](images/lcm_fsm.png)
 
 # Simulation result
